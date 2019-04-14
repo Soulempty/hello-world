@@ -2,7 +2,6 @@ import os
 import xml.dom.minidom
 import numpy as np
 import cv2
-import math
 
 def crop(img_path,xml_path,des_path):
     files=os.listdir(img_path)
@@ -59,7 +58,7 @@ def crop(img_path,xml_path,des_path):
 	
 if __name__=='__main__':
 
-    img_path = '/home/chao/NewSpace/CCPD/LPR/3/澳门出入境车牌'
-    xml_path = '/home/chao/NewSpace/CCPD/LPR/3/澳门出入境车牌'
-    plate_path = 'plate5'
+    img_path = '/home/../imgs'
+    xml_path = '/home/../labels'
+    plate_path = '/home/../object'
     crop(img_path,xml_path,des_path)
